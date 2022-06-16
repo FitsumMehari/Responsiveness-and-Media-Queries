@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness and Media Queries</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="text">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </section>
+        <section class="form">
+            <button><b>Try is free 7 days</b> <span>then $20/mo. thereafter</span></button>
+            <form action="">
+                <div class="input fname">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                    
+                    <span id="fnameerr" class="hidden">
+                        <img class="erricon" src="./icon-error.svg" id="fnameerricon" alt="">
+                        <span class="errtext" id="fnameerrtext">First Name cannot be empty</span>
+                    </span>
+                </div>
+
+                <div class="input lname">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                    <span id="lnameerr" class="hidden">
+                        <img class="erricon" src="./icon-error.svg" id="lnameerricon" alt="">
+                        <span class="errtext" id="lnameerrtext">Last Name cannot be empty</span>
+                    </span>
+                </div>
+
+                <div class="input email">
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <span id="emailerr" class="hidden">
+                        <img class="erricon" src="./icon-error.svg" id="emailerricon" alt="">
+                        <span class="errtext" id="emailerrtext">Looks like this is not an email</span>
+                    </span>
+                </div>
+
+                <div class="input password">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <span id="passworderr" class="hidden">
+                        <img class="erricon" src="./icon-error.svg" id="passworderricon" alt="">
+                        <span class="errtext" id="passworderrtext">Password cannot be empty</span>
+                    </span>
+                </div>
+                
+                <input class="submit-btn" id="submit" type="submit" value="CLAIM YOUR FREE TRIAL">
+                <p>By clicking the button you are agreeing to our <span>Terms and Services</span></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
